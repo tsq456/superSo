@@ -1,0 +1,179 @@
+/** 基础样式设定 **/
+html {
+    font-size: 16px;
+    line-height: 1.8rem;
+      color: #333;
+    background: #fff;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-rendering: optimizelegibility;
+  }
+  
+  fieldset, img {
+    border: 0;
+  }
+  blockquote {
+    position: relative;
+    color: #999;
+    font-weight: 400;
+    border-left: 1px solid #1abc9c;
+    padding-left: 1em;
+    margin: 1em 3em 1em 2em;
+  }
+  
+  @media only screen and ( max-width: 640px ) {
+    blockquote {
+      margin: 1em 0;
+    }
+  }
+  ul, ol {
+    list-style: none;
+  }
+  caption, th {
+    text-align: left;
+  }
+  
+  q:before, q:after {
+    content: '';
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+  }
+  
+  :root sub, :root sup {
+    vertical-align: baseline; /* for ie9 and other modern browsers */
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  /* 代码片断 */
+  pre, code, pre tt {
+    font-family: Courier, 'Courier New', monospace;
+  }
+  
+  pre {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 1em 1.5em;
+    display: block;
+    -webkit-overflow-scrolling: touch;
+  }
+  /* 一致化 horizontal rule */
+  hr {
+    border: none;
+    border-bottom: 1px solid #cfcfcf;
+    margin-bottom: 0.8em;
+    height: 10px;
+  }
+  .p, .pre, .ul, .ol, .dl, .form, .hr, .table, blockquote {
+    margin-bottom: 1.2em
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+    font-weight: 100;
+    color: #000;
+    line-height: 1.35;
+  }
+  
+  h1.notion-heading {
+      font-size: 2em;
+  }
+    
+  h2.notion-heading {
+      font-size: 1.8em;
+  }
+    
+  h3.notion-heading {
+      font-size: 1.6em;
+  }
+  
+  /* 在文章中，应该还原 ul 和 ol 的样式 */
+  ul {
+      margin-left: 1.3em;
+      list-style: disc;
+  }
+    
+  ol {
+      list-style: decimal;
+      margin-left: 1.9em;
+  }
+    
+  li ul, li ol, ul ul, ul ol, ol ul, ol ol {
+      margin-bottom: 0.8em;
+      margin-left: 2em;
+  }
+    
+  li ul, ul ul, ol ul {
+      list-style: circle;
+  }
+  
+  .notion-collection__header-wrapper {
+    margin-top: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  .notion-collection-list {
+    border-top: hidden;
+    padding: 0;
+  }
+  .notion-collection-list__item {
+    margin: 4px 0;
+    padding: 0;
+  }
+  .notion-header__cover.no-cover {
+    margin-top: 100px;
+    height: 0px;
+  }
+  .notion-property__title__icon-wrapper {
+    width: 0;
+    visibility: hidden;
+  }
+  .notion-collection-list__item .notion-property__title .notion-semantic-string {
+    margin-inline-start: 0px
+  }
+  .notion-property__title .notion-property__title__icon-wrapper {
+      margin-inline-end: 0px;
+  }
+  
+  div#page-index .notion-header__title-wrapper {
+    height: 0;
+    visibility: hidden;
+  }
+  /*头图样式控制*/
+  
+  /*顶部导航样式控制*/
+  
+  /*页面底板样式控制*/
+  .super-content.max-width {
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.08);
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 5%;
+    border-radius: 8px;
+    background-color: white;
+  }
+  
+  /*tag标签样式控制*/
+  .notion-pill {
+    background-color: white;
+    border: 1px solid #c7c7c7;
+    color: var(--color-text-default-light);
+  }
+  /*无序列表样式控制*/
+  .notion-bulleted-list li {
+    margin: 0;
+  }
+  /*页面标题样式*/
+  .notion-header__title {
+    text-align: center;
+    font-size: 1.6rem;
+  }
